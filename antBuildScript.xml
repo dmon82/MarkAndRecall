@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MarkAndRecall" default="all" basedir=".">
+    <target name="-pre-init">
+        <!-- TODO define script. See Help menu or http://ant.apache.org/ -->
+        <property name="version" value="1.0" />
+        <property namn="project" value="MarkAndRecall" />
+        <tstamp>
+            <format property="now" pattern="yyyy-MM-dd HH:mm:ss z" />
+        </tstamp>
+        
+        <manifest file="MANIFEST.MF">
+            <attribute name="Bundle-Name" value="${project}" />
+            <attribute name="Bundle-Version" value="${version}" />
+            <attribute name="Bundle-Date" value="${now}" />
+            <attribute name="Implementation-Title" value="${project}" />
+            <attribute name="Implementation-Version" value="${version}" />
+            <attribute name="Implementation-URL" value="http://pveplands.com" />
+        </manifest>
+    </target>
+</project>
